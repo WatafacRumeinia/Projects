@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <h2 id="title">S P L I<br>T T E R</h2>
+  <div class="wrapper">
+    <form>
+      <div id="forFlex">
+        <label for="html" >Bill</label><br>
+        <input type="text" name="price" id="prc" class="inputTxt" required ><br>
+        <label for="btns">Select Tip %</label><br>
+        <section id="btn-grid">
+          <button class="btn" id="5prc">5%</button>
+          <button class="btn" id="10prc">10%</button>
+          <button class="btn" id="15prc">15%</button>
+          <button class="btn" id="25prc">25%</button>
+          <button class="btn" id="50prc">50%</button>
+          <input type="text"  id="Custom" class="btn inputTxt" placeholder="Custom"> 
+        </section>
+          <label >Number of People</label><br>
+          <input type="text"  id="nrOfPeople" class="inputTxt" required >
+      </div>
+      <section id="printInf">
+        <div class="infContainer">
+          <div id="up">
+            <p class="printP">Tip Amount<br>
+              <span>/ person</span>
+            </p>
+            <h2 class="tip">$0.00</h2>
+
+          </div>
+          <div id="down">
+            <p class="printP">Tip Amount
+              <br>
+              <span>/ person</span>
+            </p>
+            <h2 class="tip">$0.00</h2>
+          </div>
+          <button  type="reset">RESET</button>
+        </div>
+      </section>
+    </form>
+    
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- 
+Bill
+
+Select Tip %
+5%
+10%
+15%
+25%
+50%
+Custom
+
+Number of People
+
+Tip Amount
+/ person
+
+Total
+/ person
+
+Reset -->

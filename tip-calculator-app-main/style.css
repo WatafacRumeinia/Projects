@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Space+Mono:wght@400;700&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --strong-cyan:hsl(172, 67%, 45%);
+    --dark-cyan:hsl(183, 100%, 15%);
+    --grayish-cyan:hsl(186, 14%, 43%);
+    --dark-graysh-cyan:hsl(184, 14%, 56%);
+    --light-graysh-cyan:hsl(185, 41%, 84%);
+    --light-gr-cyan:hsl(189, 41%, 97%);
+    --white:hsl(0, 0%, 100%);
+}
+body{
+    background-color: white;
+    font-family: 'Space Mono', monospace;
+    background-color: var(--light-graysh-cyan);
+}
+#title{
+    text-align: center;
+    color: var(--dark-cyan);
+    padding: 30px;
+}
+.wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: var(--white);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+form{
+    padding: 20px 30px;
+    margin-left: 10px;
+}
+.btn{
+    font-family: 'Space Mono', monospace;
+    height: 50px;
+    width:100%;
+    font-size: 24px;
+    padding:5px;
+    font-weight: 600;
+    background-color: var(--dark-cyan);
+    border: none;
+    color: var(--white);
+    border-radius: 5px;
+}
+.btn:focus{
+    background-color: var(--strong-cyan);
+    color: var(--dark-cyan);
+}
+#Custom{
+    background-color: var(--light-gr-cyan);
+    color: var();
+}
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  text-align: center;
+}  
+#prc{
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+input{
+    width: 100%;
+    height: 1cm;
+    border: none;
+    border-radius: 5px;
+}
+.inputTxt{
+    background-color: var(--light-gr-cyan);
+    color: var(--dark-cyan);
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Space Mono', monospace;
+    text-align: end;
+
+}
+.inputTxt:focus{
+    outline: none !important;
+    border-color: var(--strong-cyan);
+    box-shadow:  0 0 0 2px var(--strong-cyan);
+}
+#prc{
+    background-image: url(./images/icon-dollar.svg );
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 10px;
+}
+#nrOfPeople{
+    background-image: url(./images/icon-person.svg );
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 10px;
+}
+label{
+    font-weight: 600;
+    color: var(--dark-graysh-cyan);
+}
+#btn-grid{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 20px;
+    row-gap: 13px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+#printInf{
+    background-color: var(--dark-cyan);
+    border-radius: 17px;
+    margin-top: .7cm;
+    
+}
+#up{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#down{
+    padding-bottom: 20px;
+}
+#up, #down{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#printInf button{
+    height: 1cm;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: var(--strong-cyan);
+    border: none;
+    border-radius: 5px;
+    color: var(--dark-cyan);
+    font-size: 20px;
+    font-weight: 500;
+}
+#printInf .printP{
+color: var(--white);
+font-size: 14px;
+font-weight: 600;
+}
+.printP span{
+    color: var(--dark-graysh-cyan);
+    font-weight: 600;
+    font-size: 12px;
+}
+.tip{
+    color: var(--strong-cyan);
+    font-size: 30px;
+}
+.infContainer{
+    margin: 40px 20px;
+}
+@media  only screen and (min-width:900px) {
+    
+    .wrapper{
+        width: 700px;
+        height: 350px;
+        margin: 1cm auto;
+        border-radius: 20px;
+        
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        column-gap: 1cm;
+        
+    }
+    #btn-grid{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        column-gap: 7px;
+        
+    }
+    .btn{
+        height: 35px;
+        width: 1in;
+        padding: 0;
+    }
+    /* #forFlex + #printInf{
+        width: 350px;
+        height: 180px;
+        
+    } */
+    /* form section{
+        
+        border: 1px solid black;
+    } */
+    #printInf{
+        margin: 0;
+        height: 2in;
+        height: 100%;
+        width: 100%;
+
+    }
+    #printInf button{
+        position: relative;
+        top: 30px;
+    } 
+}
+
